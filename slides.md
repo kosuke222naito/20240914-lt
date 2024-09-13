@@ -51,9 +51,7 @@ h1::first-letter {
 </style>
 
 ---
-title: スライドはこちらで
-transition: slide-left
-level:
+transition: view-transition
 ---
 
 <h1>こ<span text-blue>の</span>スライドはこちらで</h1>
@@ -64,6 +62,7 @@ level:
   gap-16
   justify-center
   items-center
+  class="view-transition-qr"
 >
   <input v-model="text" type="text" w-full />
   <img :src="qrcode" alt="QR Code" w-64/>
@@ -79,17 +78,55 @@ const text = ref("https://kosuke222naito.github.io/20240907-lt/");
 const qrcode = useQRCode(text);
 </script>
 
+<style>
+.view-transition-qr {
+  view-transition-name: view-transition-qr;
+}
+</style>
+
 ---
 transition: slide-left
+layout: two-cols
 ---
 
 <h1>Table <span text-blue>o</span>f contents</h1>
 
 おしながき
 
+<br />
+<br />
+
 <Toc minDepth="1" maxDepth="1"></Toc>
 
+::right::
+
+<div
+  mt-10
+  flex="~ col"
+  gap-16
+  justify-center
+  items-center
+  class="view-transition-qr"
+>
+  <input v-model="text" type="text" w-full />
+  <img :src="qrcode" alt="QR Code" w-64/>
+</div>
+
 <PageNumber :page="$page" />
+
+<script setup>
+import { ref } from "vue";
+import { useQRCode } from "@vueuse/integrations/useQRCode";
+
+const text = ref("https://kosuke222naito.github.io/20240907-lt/");
+const qrcode = useQRCode(text);
+</script>
+
+<style>
+.view-transition-qr {
+  view-transition-name: view-transition-qr;
+}
+</style>
 
 ---
 transition: slide-left
@@ -135,11 +172,9 @@ layoutClass: gap-16
 
 <ul class="text-2xl">
   <li>
-    <span class="color-python">Python</span> <carbon-logo-python text-blue /> で Web バックエンド
+    <span class="color-python">Python</span> <logos-python /> が好き
   </li>
-  <li>Web フロントもやりたい</li>
-  <li v-after><span class="text-gradation">Vue</span> <carbon-logo-vue text-green /> が好き</li>
-  <li>since: 2021 (<span text-blue>{{ years }}</span>年目)</li>
+  <li v-after><span class="text-gradation">Vue</span> <logos-vue text-xl /> も好き</li>
   <li v-after><span class="color-itf">筑波大</span>卒 (非 CS 専攻)</li>
   <li><span text-yellow>柏</span> (<a href="https://toukatsu.connpass.com/">東葛de<span text-green>v</span></a> 運営)</li>
   <li>自作キーボード</li>
@@ -569,6 +604,8 @@ level: 2
 <h1>クリック<span text-blue>ア</span>ニメーション</h1>
 
 <br />
+<br />
+<br />
 
 <div v-click>
 
@@ -591,12 +628,6 @@ level: 2
 ```
 
 </v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
 
 <PageNumber :page="$page" />
 
@@ -842,8 +873,6 @@ class: bg-white
   <img src="/images/vue_community_gradation.png" h-400px />
 </div>
 
-<PageNumber :page="$page" />
-
 ---
 transition: slide-up
 ---
@@ -990,22 +1019,15 @@ transition: slide-up
 - どのツールもいいところと課題があった
   - pip: シンプル but 依存関係管理が困難
   - poetry: 依存関係 & プロジェクト管理 but 速くない
+
+<br />
+
 - 併用するとコンフリクトしたり
 - 互換性なかったり
-
-<v-click>
-
 - 依存関係管理に `requirements.txt` が使われていたことも
-
-</v-click>
-
-<v-click>
-
 - バージョンの固定(`.lock`)ができない
 - 手動で管理
 - 複数環境(`dev`, `staging`, `prod`)の管理が難しい
-
-</v-click>
 
 <PageNumber :page="$page" />
 
@@ -1124,7 +1146,7 @@ transition: slide-left
 <v-clicks>
 
 - そして最終的には `uv` と `Rye` が一つになって、
-- 完全体 "cargo for Python" の実現を目指す！
+- 完全体 <span v-mark.yellow>"cargo for Python"</span> の実現を目指す！
 
 </v-clicks>
 
