@@ -913,7 +913,7 @@ transition: slide-up
 transition: slide-left
 ---
 
-<h1><span text-green>V</span>ue F<span text-blue>e</span>s  2024 <openmoji-flag-japan /> <logos-vue /></h1>
+<h1><span text-green>V</span>ue F<span text-blue>e</span>s Japan 2024 <openmoji-flag-japan /> <logos-vue /></h1>
 
 2024.10.19 Sat @Otemachi PLACE HALL & CONFERENCE
 
