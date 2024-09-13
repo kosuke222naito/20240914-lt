@@ -580,7 +580,7 @@ Presentation Slides for Developers
 - 🤹 **インタラクティ<span text-blue>ブ</span>** - <span text-green>V</span>ue コンポーネントを埋め込み可能
 - 🎥 **録画<span text-blue>機</span>能** - 録画機能とカメラビューもある
 - 📤 **<span text-blue>ポ</span>ータブル** - PDF、PPTX、PNG、または SPA としてエクスポート可能
-- 🛠 **ハッカブ<span text-blue>ル</span>** - Web でできることはほぼ全てSlide<span text-green>v</span>でも可能
+- 🛠 **ハッカブ<span text-blue>ル</span>** - Web でできることはほぼ全て Slide<span text-green>v</span> でも可能
 
 <br />
 <br />
