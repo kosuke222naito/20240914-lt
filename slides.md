@@ -1079,7 +1079,7 @@ layout: two-cols-header
 <br />
 
 <v-click>
-Rye 自体が優れた機能を提供していない
+Rye 自体は優れた機能を提供していない
 </v-click>
 
 <br />
