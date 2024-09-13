@@ -1002,7 +1002,7 @@ one-stop shop tool for Python
 - プロジェクト管理
 - ツール管理
 - 慣れ親しんだ pip インターフェース
-- u<span text-blue>v</span> 自体のアップデートなど各種ユーティリティ
+- u<span text-green>v</span> 自体のアップデートなど各種ユーティリティ
 
 <PageNumber :page="$page" />
 
