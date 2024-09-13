@@ -1,6 +1,5 @@
 ---
 theme: default
-title: V が名前に入ってる
 info: |
   ## 「V が名前に入ってる」
   Funabashi.dev supported by KIKKAKE CREATION 2024.09.14
@@ -567,26 +566,6 @@ transition: slide-up
 level: 2
 ---
 
-<h1>このス<span text-blue>ラ</span>イドも</h1>
-
-<div flex justify-center items-center gap-50 h-full text-4xl>
-  <div v-click>Powered by <span v-mark="{ at: '2', color: 'green' }">Slide<span text-green>v</span></span></div>
-  <img
-    v-after
-    src="https://sli.dev/logo.png"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 1000, duration: 1000 } }"
-  />
-</div>
-
-<PageNumber :page="$page" />
-
----
-transition: slide-up
-level: 2
----
-
 <h1>クリック<span text-blue>ア</span>ニメーション</h1>
 
 <br />
@@ -789,25 +768,6 @@ const final = {
 transition: slide-up
 ---
 
-<h1>Dragga<span text-blue>b</span>le Elements</h1>
-
-<img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
-
-<v-drag pos="664,414,261,_,-15">
-
-  <div text-center text-3xl border border-main rounded text-green>
-    Double-click me!
-  </div>
-</v-drag>
-
-<v-drag-arrow pos="111,348,253,46" two-way />
-
-<PageNumber :page="$page" />
-
----
-transition: slide-up
----
-
 <h1>Monaco <span text-blue>E</span>ditor</h1>
 
 <br />
@@ -827,19 +787,6 @@ console.log(
 ```
 
 <PageNumber :page="$page" />
-
----
-layout: center
-transition: slide-left
-class: text-center text-4xl
-level: 2
----
-
-# Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
-
-<PoweredBySlidev mt-10 />
 
 ---
 layout: center
@@ -1021,8 +968,8 @@ one-stop shop tool for Python
 
 - Rust 製で高速
 - Python 自体のインストール & バージョン管理
-- Python パッケージ管理
 - Python スクリプトの実行
+- パッケージ管理
 - プロジェクト管理
 - ツール管理
 - 慣れ親しんだ pip インターフェース
@@ -1100,8 +1047,7 @@ layout: two-cols-header
 - <div>mitsuhiko さん <a href="https://twitter.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-twitter /></a> <a href="https://github.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-github /></a> が自分のために開発</div>
 - デフォルトの依存関係なし
 - `virtualenv` を利用
-- `uv` を採用
-- OS ごとの Python を利用しない
+- (当時の) `uv` を採用
 - 標準化された `indygreg` Python ビルドを利用
 - `pyproject.toml` に依存関係 & プロジェクト設定
 - `pyproject.toml` を見てよしなに Python 環境
@@ -1111,14 +1057,12 @@ layout: two-cols-header
 <br />
 
 <v-click>
-Rye 自体が優れた機能を提供しているのではなく、
+Rye 自体が優れた機能を提供していない
 </v-click>
 
 <br />
 
-<span v-click v-mark.yellow>
-エコシステムのツールに委譲している。
-</span>
+<span v-click><span v-mark.yellow>エコシステムのツールに委譲</span>している</span>
 
 <PageNumber :page="$page" />
 
@@ -1127,7 +1071,7 @@ transition: slide-up
 layout: two-cols-header
 ---
 
-<h1>当時のu<span text-green>v</span></h1>
+<h1>当時の u<span text-green>v</span></h1>
 
 Rust 製高速 Python パッケージインストーラー & リゾルバー
 
@@ -1142,13 +1086,13 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 <v-click>
 
 - [Ruff](https://astral.sh/ruff) を手がける [astral](https://astral.sh/) 社製
+- Rust 製で高速
 - `pip`, `pip-tools` を代替する
 - 使いやすいツール
 - `virtualenv` の代わりも
-- 高速
 - `pip` のインターフェース
-- Python に依存していないバイナリ
-- グローバル Python のバージョンに依存しない
+- Python に依存していない
+- Python のバージョンに依存しない
 
 </v-click>
 
@@ -1160,7 +1104,7 @@ transition: slide-left
 
 <h1>Rye & u<span text-green>v</span></h1>
 
-`Rye` も astral 社へ
+"cargo for Python" へ
 
 <br />
 <br />
@@ -1171,6 +1115,14 @@ transition: slide-left
 
 - `Rye` 作者と astral 社の話し合いのもと、
 - astral 社で `Rye` を管理することに！
+
+</v-clicks>
+
+<br />
+<br />
+
+<v-clicks>
+
 - そして最終的には `uv` と `Rye` が一つになって、
 - 完全体 "cargo for Python" の実現を目指す！
 
@@ -1183,17 +1135,19 @@ layout: two-cols
 title: まとめ
 ---
 
-<h1>ま<span text-blue>と</span>め</h1>
+<h1>ま<span text-blue>と</span>め  <logos-vue animate-ping /></h1>
 
 名前に V 入ってること多くない？
 
 <br />
+<br />
+<br />
 
-<div text-2xl>
+<div text-3xl>
 
-- Slide<span text-green>v</span> <logos-slidev /> で一緒に遊ぼう！
-- <span text-green>V</span>ue <logos-vue animate-ping /> Fes Japan 2024
-- ほんとに u<span text-green>v</span> 流行ってほしい
+- Slide<span text-green>v</span> <logos-slidev /> で遊ぼう！
+- <span text-green>V</span>ue Fes Japan 2024
+- u<span text-green>v</span> 流行るといいな
 
 </div>
 
