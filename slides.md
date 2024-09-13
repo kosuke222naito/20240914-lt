@@ -70,6 +70,8 @@ level:
   <img :src="qrcode" alt="QR Code" w-64/>
 </div>
 
+<PageNumber :page="$page" />
+
 <script setup>
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
@@ -87,6 +89,8 @@ transition: slide-left
 おしながき
 
 <Toc minDepth="1" maxDepth="1"></Toc>
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-left
@@ -141,6 +145,8 @@ layoutClass: gap-16
   <li><span text-yellow>柏</span> (<a href="https://toukatsu.connpass.com/">東葛de<span text-green>v</span></a> 運営)</li>
   <li>自作キーボード</li>
 </ul>
+
+<PageNumber :page="$page" />
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -437,6 +443,8 @@ layout: two-cols-header
   </li>
 </ul>
 
+<PageNumber :page="$page" />
+
 <script setup lang="ts">
 import { ref } from "vue";
 
@@ -486,7 +494,7 @@ const highlightV = (text) => {
 -->
 
 ---
-transition: view-transition
+transition: slide-left
 level: 2
 ---
 
@@ -497,16 +505,12 @@ level: 2
 <br />
 
 <ul text-4xl>
-  <li><span class="view-transition-slidev">Slide<span class="text-green">v</span></span></li>
+  <li>Slide<span class="text-green">v</span></li>
   <li><span class="text-green">V</span>ue</li>
   <li>u<span class="text-green">v</span></li>
 </ul>
 
-<style>
-.view-transition-slidev {
-  view-transition-name: view-transition-slidev;
-}
-</style>
+<PageNumber :page="$page" />
 
 ---
 transition: view-transition
@@ -550,6 +554,8 @@ Presentation Slides for Developers
 
 [Why Slidev?](https://sli.dev/guide/why)
 
+<PageNumber :page="$page" />
+
 <style>
 .view-transition-slidev {
   view-transition-name: view-transition-slidev;
@@ -573,6 +579,8 @@ level: 2
     :enter="{ x: 0, opacity: 1, transition: { delay: 1000, duration: 1000 } }"
   />
 </div>
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -610,6 +618,8 @@ level: 2
 [Learn more](https://sli.dev/guide/animations#click-animation)
 
 </div>
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -684,6 +694,8 @@ const author = {
 ```
 ````
 
+<PageNumber :page="$page" />
+
 <!--
 Vue2 から Vue3 への移行の例のはず
 -->
@@ -745,6 +757,8 @@ transition: slide-up
   </div>
 </div>
 
+<PageNumber :page="$page" />
+
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -769,6 +783,8 @@ const final = {
 
 </div>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-up
 ---
@@ -777,7 +793,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,_,-15">
+<v-drag pos="664,414,261,_,-15"undefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -785,6 +801,8 @@ transition: slide-up
 </v-drag>
 
 <v-drag-arrow pos="111,348,253,46" two-way />
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -808,6 +826,8 @@ console.log(
 );
 ```
 
+<PageNumber :page="$page" />
+
 ---
 layout: center
 transition: slide-left
@@ -822,19 +842,24 @@ level: 2
 <PoweredBySlidev mt-10 />
 
 ---
-layout: cover
-class: text-right
-transition: slide-up
+layout: center
+transition: view-transition
 ---
 
-<h1><span text-green>V</span>ue</h1>
+<h1><span class="view-transition-vue"><span text-green>V</span>ue</span></h1>
+
+<style>
+.view-transition-vue {
+  view-transition-name: view-transition-vue;
+}
+</style>
 
 ---
 transition: slide-up
 title: Vue コミュニティ
 ---
 
-<h1><span text-green>V</span>ue コミ<span text-blue>ュ</span>ニティ</h1>
+<h1><span class="view-transition-vue"><span text-green>V</span>ue</span> コミ<span text-blue>ュ</span>ニティ</h1>
 
 あなたもすでにコミュニティの一員！？
 
@@ -849,6 +874,14 @@ title: Vue コミュニティ
 - ドキュメントを翻訳す<span text-blue>る</span>
 - イベント<span text-blue>で</span>発表する、支援する
 
+<PageNumber :page="$page" />
+
+<style>
+.view-transition-vue {
+  view-transition-name: view-transition-vue;
+}
+</style>
+
 ---
 transition: slide-up
 class: bg-white
@@ -862,6 +895,8 @@ class: bg-white
   <img src="/images/vue_community_gradation.png" h-400px />
 </div>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-up
 ---
@@ -874,10 +909,12 @@ transition: slide-up
 
 - <span text-green>v</span>-tokyo <span text-blue>参</span>加
 - <span text-green>V</span><span text-blue>u</span>e 教えてもらう(勉強会を開く)
-- ドキュメント<span text-blue>日</span>本語訳の改善
+- ドキュメント<span text-blue>日</span>本語訳の改善に挑戦
 - <span text-green>V</span>ue Fes Japan のボランティ<span text-blue>ア</span>
 - 記事<span text-blue>を</span>書く
 - Twitter, Discord でわち<span text-blue>ゃ</span>わちゃする
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -894,13 +931,15 @@ transition: slide-up
   <Tweet id="1182324722316562432" scale="0.7" h-16 />
 </div>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-left
 ---
 
-<h1><span text-green>V</span>ue <logos-vue /> Fes <span text-blue>J</span>apan <openmoji-flag-japan /> 2024</h1>
+<h1><span text-green>V</span>ue F<span text-blue>e</span>s  2024 <openmoji-flag-japan /> <logos-vue /></h1>
 
-2024.10.19 Sat @ Otemachi PLACE HALL & CONFERENCE
+2024.10.19 Sat @Otemachi PLACE HALL & CONFERENCE
 
 <div
   mt-10
@@ -913,6 +952,8 @@ transition: slide-left
   <img :src="qrcode" alt="QR Code" w-64/>r
 </div>
 
+<PageNumber :page="$page" />
+
 <script setup>
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
@@ -922,19 +963,24 @@ const qrcode = useQRCode(text);
 </script>
 
 ---
-layout: cover
-class: text-left
-transition: slide-up
+layout: center
+transition: view-transition
 ---
 
-<h1>u<span text-green>v</span></h1>
+<h1><span class="view-transition-uv">u<span text-green>v</span></span></h1>
+
+<style>
+.view-transition-uv {
+  view-transition-name: view-transition-uv;
+}
+</style>
 
 ---
 transition: slide-up
 title: What is uv? (cargo for Python?)
 ---
 
-<h1><span text-blue>u</span><span text-green>v</span></h1>
+<h1><span class="view-transition-uv"><span text-blue>u</span><span text-green>v</span></span></h1>
 
 Rust 製 Python 用パッケージ & プロジェクトマネージャー
 
@@ -955,6 +1001,14 @@ Rust 製 Python 用パッケージ & プロジェクトマネージャー
 - `virtualenv`
 - etc...
 
+<PageNumber :page="$page" />
+
+<style>
+.view-transition-uv {
+  view-transition-name: view-transition-uv;
+}
+</style>
+
 ---
 transition: slide-up
 ---
@@ -973,6 +1027,8 @@ one-stop shop tool for Python
 - ツール管理
 - 慣れ親しんだ pip インターフェース
 - u<span text-blue>v</span> 自体のアップデートなど各種ユーティリティ
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -1004,6 +1060,8 @@ transition: slide-up
 
 </v-click>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-up
 ---
@@ -1019,6 +1077,8 @@ transition: slide-up
 - ツールが `pyproject.toml` を読んで自動的に依存関係の解決
 - パッケージ管理とプロジェクト管理も
 - 開発依存とプロダクション依存を分離して管理可能に
+
+<PageNumber :page="$page" />
 
 ---
 transition: slide-up
@@ -1060,6 +1120,8 @@ Rye 自体が優れた機能を提供しているのではなく、
 エコシステムのツールに委譲している。
 </span>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-up
 layout: two-cols-header
@@ -1090,6 +1152,8 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 
 </v-click>
 
+<PageNumber :page="$page" />
+
 ---
 transition: slide-left
 ---
@@ -1111,6 +1175,8 @@ transition: slide-left
 - 完全体 "cargo for Python" の実現を目指す！
 
 </v-clicks>
+
+<PageNumber :page="$page" />
 
 ---
 layout: two-cols
@@ -1134,3 +1200,5 @@ title: まとめ
 ::right::
 
 <Tweet id="1718194948376596941"/>
+
+<PageNumber :page="$page" />
