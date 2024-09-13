@@ -74,7 +74,7 @@ transition: view-transition
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
 
-const text = ref("https://kosuke222naito.github.io/20240907-lt/");
+const text = ref("https://kosuke222naito.github.io/20240914-lt/");
 const qrcode = useQRCode(text);
 </script>
 
@@ -118,7 +118,7 @@ layout: two-cols
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
 
-const text = ref("https://kosuke222naito.github.io/20240907-lt/");
+const text = ref("https://kosuke222naito.github.io/20240914-lt/");
 const qrcode = useQRCode(text);
 </script>
 
