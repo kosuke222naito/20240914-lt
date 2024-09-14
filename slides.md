@@ -721,6 +721,8 @@ const author = {
 
 <!--
 Vue2 から Vue3 への移行の例のはず
+Shiki: シンタックスハイライター、VS Code と同じエンジン
+Shiki Magic Move: コードにアニメーション
 -->
 
 ---
