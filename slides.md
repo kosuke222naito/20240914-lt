@@ -895,6 +895,12 @@ class: bg-white
   <img src="/images/vue_community_gradation.png" h-400px />
 </div>
 
+<!--
+コミュニティに明確な境界線はない
+自分の行動が Vue.js にとってどう映るかを意識する
+技術の裏にいる方たちへのリスペクトを忘れずに
+ -->
+
 ---
 transition: slide-up
 ---
