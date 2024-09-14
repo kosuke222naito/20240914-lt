@@ -600,6 +600,11 @@ Presentation Slides for Developers
 }
 </style>
 
+<!--
+Web やってる方だったら楽しくスライド作れる
+マークダウンで内容を考えて、見た目は HTML, CSS, JS
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -823,6 +828,13 @@ console.log(
 
 <PageNumber :page="$page" />
 
+<!--
+VS Code を Web で使える
+インタラクティブなコードエディタ
+動的な編集も可能
+補完とかエラーチェックとかも
+ -->
+
 ---
 layout: center
 transition: view-transition
@@ -979,7 +991,7 @@ Rust 製 Python 用パッケージ & プロジェクトマネージャー
 - `poetry`
 - `pyenv`
 - `virtualenv`
-- etc...
+- and more ...
 
 <PageNumber :page="$page" />
 
