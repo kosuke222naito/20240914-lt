@@ -920,6 +920,10 @@ transition: slide-up
 
 <PageNumber :page="$page" />
 
+<!--
+明確に境界がないということは逆に書いてない人でもできることはある
+ -->
+
 ---
 transition: slide-up
 ---
