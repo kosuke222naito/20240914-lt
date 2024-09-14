@@ -239,6 +239,10 @@ ul li span.text-gradation {
 };
 </style>
 
+<!--
+推しキーキャップは Kailh Clione Limacina Switch / Linear です。
+ -->
+
 ---
 transition: view-transition
 title: V が名前に入ってる技術
@@ -1079,7 +1083,7 @@ layout: two-cols-header
 <br />
 
 <v-click>
-Rye 自体は優れた機能を提供していない
+Rye 自体が特別な機能を提供しているわけではない
 </v-click>
 
 <br />
