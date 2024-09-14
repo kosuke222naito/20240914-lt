@@ -640,6 +640,10 @@ level: 2
 
 <PageNumber :page="$page" />
 
+<!--
+Slidev のいい感じの機能を紹介していきます
+ -->
+
 ---
 transition: slide-up
 level: 2
