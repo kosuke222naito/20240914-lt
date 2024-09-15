@@ -70,6 +70,8 @@ transition: view-transition
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <script setup>
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
@@ -113,6 +115,8 @@ layout: two-cols
 </div>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <script setup>
 import { ref } from "vue";
@@ -181,6 +185,8 @@ layoutClass: gap-16
 </ul>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <script setup lang="ts">
 import { ref } from "vue";
@@ -483,6 +489,8 @@ layout: two-cols-header
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <script setup lang="ts">
 import { ref } from "vue";
 
@@ -550,6 +558,8 @@ level: 2
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: view-transition
 layout: center
@@ -593,6 +603,8 @@ Presentation Slides for Developers
 [Why Slidev?](https://sli.dev/guide/why)
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <style>
 .view-transition-slidev {
@@ -639,6 +651,8 @@ level: 2
 </v-click>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <!--
 Slidev のいい感じの機能を紹介していきます
@@ -719,6 +733,8 @@ const author = {
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <!--
 Vue2 から Vue3 への移行の例のはず
 Shiki: シンタックスハイライター、VS Code と同じエンジン
@@ -784,6 +800,8 @@ transition: slide-up
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -810,6 +828,8 @@ const final = {
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: slide-up
 ---
@@ -833,6 +853,8 @@ console.log(
 ```
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <!--
 VS Code を Web で使える
@@ -875,6 +897,8 @@ title: Vue コミュニティ
 - イベント<span text-blue>で</span>発表する、支援する
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <style>
 .view-transition-vue {
@@ -920,6 +944,8 @@ transition: slide-up
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <!--
 明確に境界がないということは逆に書いてない人でもできることはある
 -->
@@ -941,6 +967,8 @@ transition: slide-up
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: slide-left
 ---
@@ -961,6 +989,8 @@ transition: slide-left
 </div>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <script setup>
 import { ref } from "vue";
@@ -1011,6 +1041,8 @@ Rust 製 Python 用パッケージ & プロジェクトマネージャー
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 <style>
 .view-transition-uv {
   view-transition-name: view-transition-uv;
@@ -1038,6 +1070,8 @@ one-stop shop tool for Python
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: slide-up
 ---
@@ -1063,6 +1097,8 @@ transition: slide-up
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: slide-up
 ---
@@ -1080,6 +1116,8 @@ transition: slide-up
 - 開発依存とプロダクション依存を分離して管理可能に
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 ---
 transition: slide-up
@@ -1120,6 +1158,8 @@ Rye 自体が特別な機能を提供しているわけではない
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 transition: slide-up
 layout: two-cols-header
@@ -1151,6 +1191,8 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 </v-click>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 ---
 transition: slide-left
@@ -1184,6 +1226,8 @@ transition: slide-left
 
 <PageNumber :page="$page" />
 
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
+
 ---
 layout: two-cols
 title: まとめ
@@ -1210,3 +1254,5 @@ title: まとめ
 <Tweet id="1718194948376596941"/>
 
 <PageNumber :page="$page" />
+
+<ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
