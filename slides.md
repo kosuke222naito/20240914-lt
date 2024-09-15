@@ -68,7 +68,7 @@ transition: view-transition
   <img :src="qrcode" alt="QR Code" w-64/>
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -114,7 +114,7 @@ layout: two-cols
   <img :src="qrcode" alt="QR Code" w-64/>
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -184,7 +184,7 @@ layoutClass: gap-16
   <li>自作キーボード</li>
 </ul>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -487,7 +487,7 @@ layout: two-cols-header
   </li>
 </ul>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -556,7 +556,7 @@ level: 2
   <li>u<span class="text-green">v</span></li>
 </ul>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -602,7 +602,7 @@ Presentation Slides for Developers
 
 [Why Slidev?](https://sli.dev/guide/why)
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -650,7 +650,7 @@ level: 2
 
 </v-click>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -731,7 +731,7 @@ const author = {
 ```
 ````
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -798,7 +798,7 @@ transition: slide-up
   </div>
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -826,7 +826,7 @@ const final = {
 
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -852,7 +852,7 @@ console.log(
 );
 ```
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -896,7 +896,7 @@ title: Vue コミュニティ
 - ドキュメントを翻訳す<span text-blue>る</span>
 - イベント<span text-blue>で</span>発表する、支援する
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -942,7 +942,7 @@ transition: slide-up
 - 記事<span text-blue>を</span>書く
 - Twitter, Discord でわち<span text-blue>ゃ</span>わちゃする
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -965,7 +965,7 @@ transition: slide-up
   <Tweet id="1182324722316562432" scale="0.7" h-16 />
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -988,7 +988,7 @@ transition: slide-left
   <img :src="qrcode" alt="QR Code" w-64/>r
 </div>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1039,7 +1039,7 @@ Rust 製 Python 用パッケージ & プロジェクトマネージャー
 - `virtualenv`
 - and more ...
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1068,7 +1068,7 @@ one-stop shop tool for Python
 - 慣れ親しんだ pip インターフェース
 - u<span text-green>v</span> 自体のアップデートなど各種ユーティリティ
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1095,7 +1095,7 @@ transition: slide-up
 - 手動で管理
 - 複数環境(`dev`, `staging`, `prod`)の管理が難しい
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1115,7 +1115,7 @@ transition: slide-up
 - パッケージ管理とプロジェクト管理も
 - 開発依存とプロダクション依存を分離して管理可能に
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1156,7 +1156,7 @@ Rye 自体が特別な機能を提供しているわけではない
 
 <span v-click><span v-mark.yellow>エコシステムのツールに委譲</span>している</span>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1190,7 +1190,7 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 
 </v-click>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1224,7 +1224,7 @@ transition: slide-left
 
 </v-clicks>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
@@ -1253,6 +1253,6 @@ title: まとめ
 
 <Tweet id="1718194948376596941"/>
 
-<PageNumber :page="$page" />
+<PageNumber :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />
 
 <ProgressBar :currentPage="$slidev.nav.currentPage" :totalPages="$slidev.nav.total" />

@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { computed } from "vue";
-const { page } = defineProps<{ page: number }>();
-const TOTAL_PAGES = 48;
-const pageRatio = computed(() => `${page} / ${TOTAL_PAGES}`);
+interface Props {
+  currentPage: number;
+  totalPages: number;
+}
+
+const { currentPage, totalPages } = defineProps<Props>();
+
+
 </script>
 
 <template>
-  <div class="abs-br m-6 first-letter:text-green">
-    {{ pageRatio }}
+  <div class="abs-br m-6">
+    {{ currentPage }} / {{ totalPages }}
   </div>
 </template>
