@@ -241,7 +241,7 @@ ul li span.text-gradation {
 
 <!--
 推しキーキャップは Kailh Clione Limacina Switch / Linear です。
- -->
+-->
 
 ---
 transition: view-transition
@@ -642,7 +642,7 @@ level: 2
 
 <!--
 Slidev のいい感じの機能を紹介していきます
- -->
+-->
 
 ---
 transition: slide-up
@@ -839,7 +839,7 @@ VS Code を Web で使える
 インタラクティブなコードエディタ
 動的な編集も可能
 補完とかエラーチェックとかも
- -->
+-->
 
 ---
 layout: center
@@ -899,7 +899,7 @@ class: bg-white
 コミュニティに明確な境界線はない
 自分の行動が Vue.js にとってどう映るかを意識する
 技術の裏にいる方たちへのリスペクトを忘れずに
- -->
+-->
 
 ---
 transition: slide-up
@@ -922,7 +922,7 @@ transition: slide-up
 
 <!--
 明確に境界がないということは逆に書いてない人でもできることはある
- -->
+-->
 
 ---
 transition: slide-up
